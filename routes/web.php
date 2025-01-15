@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+//Usar el controllador donde se ingresan los registros
 use App\Http\Controllers\UserController;
 
 /*
@@ -18,4 +19,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//ruta para insertar los registros
 Route::get('/insertar-registros', [UserController::class, 'insertarRegistros']);
